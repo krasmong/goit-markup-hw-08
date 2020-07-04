@@ -1,6 +1,39 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &.work {
+    padding-top: 94;
+    padding-bottom: 94px;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $secondary-bg-color;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+
+  &.clients {
+    padding: 60px 0;
+    @media screen and (min-width: 1200px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
 }
 
 .section-title {
