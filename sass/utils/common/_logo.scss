@@ -1,0 +1,29 @@
+.logo-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: $font-logo;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-footer {
+  font-family: $font-logo;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+}
+
+.logo-web {
+  color: $accent-color;
+}
+.logo-studio {
+  color: $title-text-color;
+}
+
+.logo-studio.footer {
+  color: $primary-bg-color;
+}

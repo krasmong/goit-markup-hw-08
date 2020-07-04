@@ -1,0 +1,202 @@
+/* Модальное окно "Заказать услугу" */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: $transition;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background-color: $primary-bg-color;
+
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  background-color: $primary-bg-color;
+  border-radius: 50%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Модальное окно (Формы) */
+.modal-form {
+  padding: 40px;
+}
+
+.button.submit {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: $title-text-color;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+
+  margin-bottom: 28px;
+}
+
+.icon-form {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  color: $title-text-color;
+  fill: currentColor;
+
+  transition: color $transition;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  transition: transform $transition;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color $transition;
+}
+
+.form-input:focus {
+  border-color: $accent-color;
+  outline: none;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: $accent-color;
+  transform: translate(-25px, -40px);
+}
+
+.form-input:focus ~ .icon-form {
+  color: $accent-color;
+}
+
+.form-input.comment {
+  height: 120px;
+  padding-left: 16px;
+  resize: none;
+}
+
+.form-label.comment {
+  top: 12px;
+  left: 16px;
+}
+
+.form-input:focus + .form-label.comment,
+.form-input:not(:placeholder-shown) + .form-label.comment {
+  transform: translateY(-35px);
+}
+
+/* Оформление кастомного чек-бокса */
+
+.checkbox-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* .checkbox {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; */
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-left: 0;
+  margin-right: 8px;
+  background-color: $primary-bg-color;
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+  transition: background-color $transition;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: $accent-color;
+  border: 2px solid $accent-color;
+  border-radius: 2px;
+  background-origin: border-box;
+  background-image: url(../images/check.svg);
+  background-size: contain;
+}
+
+.agree {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.agree-link {
+  color: $accent-color;
+  text-decoration-line: underline;
+}

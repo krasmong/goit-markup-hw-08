@@ -1,0 +1,119 @@
+.page-footer {
+  background-color: $footer-bg-color;
+}
+
+.container.footer {
+  display: flex;
+  padding-top: 48px;
+  padding-bottom: 28px;
+
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.address-list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  .street {
+    margin-top: 10px;
+    color: $primary-bg-color;
+  }
+}
+
+.address .link {
+  display: block;
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.social-networks {
+  display: flex;
+  justify-content: space-evenly;
+  .link {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .social-icon {
+    fill: $primary-bg-color;
+  }
+}
+
+.social .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: $color-social-links;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: #ffffff;
+    transition: background-color $transition, fill $transition;
+  }
+}
+
+.join-in > .item {
+  display: block;
+  margin-bottom: 21px;
+
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.subscribe > .item {
+  display: block;
+  margin-bottom: 21px;
+
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.subscribe .input {
+  padding: 12px 18px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: $primary-bg-color;
+  background-color: $footer-bg-color;
+  outline: none;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.subscribe .button {
+  display: flex;
+  align-items: center;
+
+  margin-left: 12px;
+}
+
+.button .icon-send {
+  margin-left: 10px;
+}
+
+.copyright {
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+}

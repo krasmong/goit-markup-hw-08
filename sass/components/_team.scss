@@ -1,0 +1,66 @@
+/* Наша команда */
+
+.section.secondary-bg {
+  background-color: $secondary-bg-color;
+}
+
+.team {
+  display: flex;
+  text-align: center;
+
+  .item {
+    padding-bottom: 24px;
+
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+
+    background-color: $primary-bg-color;
+  }
+
+  .item + .item {
+    margin-left: 30px;
+  }
+
+  .list {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .title {
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    color: $title-text-color;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+
+  .position {
+    margin-top: 10px;
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
+
+/* .social .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--color-social-links);
+}
+
+.social .link:hover,
+.social .link:focus {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+} */
