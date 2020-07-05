@@ -3,11 +3,11 @@
 .section.secondary-bg {
   background-color: $secondary-bg-color;
 
-  width: 480px;
+  width: 100%;
   margin: 0 auto;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: 100%;
   }
   @media screen and (min-width: 1200px) {
     width: 100%;
