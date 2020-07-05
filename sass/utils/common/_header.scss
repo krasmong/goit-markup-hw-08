@@ -122,10 +122,15 @@
   // .item + .item {
   //   margin-left: 50px;
   // }
-  .item {
-    margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
   }
 
+  @media screen and (max-width: 767px) {
+    .item:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
   .link.current {
     color: $accent-color;
     &::after {
@@ -136,7 +141,7 @@
   .link {
     position: relative;
 
-    display: block;
+    display: inline-block;
     padding: 8px 0px;
     // padding-top: 32px;
     // padding-bottom: 32px;
@@ -192,6 +197,15 @@
 }
 
 .contacts .link {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
   display: inline-flex;
   align-items: center;
 
