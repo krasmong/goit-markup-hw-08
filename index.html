@@ -535,96 +535,96 @@
     </main>
 
     <!--Футер-->
-    <footer class="page-footer">
+    <footer class="footer-section">
       <div class="container footer">
-        <div class="address">
-          <a href="./index.html" class="logo-footer">
-            <span class="logo-web">Web</span>
-            <span class="logo-studio footer">Studio</span>
+        <div class="logo-address">
+          <a class="footer-logo" href="./index.html">
+            <span class="logo-web">Web</span>Studio
           </a>
-
-          <address>
-            <ul class="address-list list">
-              <li class="street">г. Киев, пр-т Леси Украинки, 26</li>
-              <li>
-                <a class="link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
-              </li>
-              <li>
-                <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
-              </li>
-            </ul>
+          <address class="address">
+            г. Киев, пр-т Леси Украинки,26
           </address>
+          <a href="mailto:info@devstudio.com" class="footer-link"
+            >info@devstudio.com
+          </a>
+          <a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a>
         </div>
-        <div class="join-in">
-          <b class="item">присоединяйтесь</b>
-          <div class="social">
-            <ul class="social-networks list">
-              <li class="item">
-                <a href="" aria-label="Ссылка на Instagram" class="link">
-                  <svg class="social-icon" width="20" height="20">
-                    <use href="./images/sprite.svg#logo-instagram"></use>
-                  </svg>
 
-                  <!-- <img
-                    src="./images/logo-instagram.svg"
-                    alt="логотип Инстаграм"
-                  /> -->
-                </a>
-              </li>
-              <li class="item">
-                <a href="" aria-label="Ссылка на Twitter" class="link">
-                  <svg class="social-icon" width="20" height="20">
-                    <use href="./images/sprite.svg#logo-twitter"></use>
-                  </svg>
+        <div class="joinus">
+          <b class="action">Присоединяйтесь</b>
+          <ul class="social-links list">
+            <li class="footer-icon">
+              <a
+                class="link"
+                href="http://instagram.com"
+                aria-label="Ссылка на Instagram"
+              >
+                <svg class="footer-social">
+                  <use href="./images/sprite.svg#logo-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon">
+              <a
+                class="link"
+                href="http://twitter.com"
+                aria-label="Ссылка на Twitter"
+              >
+                <svg class="footer-social">
+                  <use href="./images/sprite.svg#logo-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon">
+              <a
+                class="link"
+                href="http://facebook.com"
+                aria-label="Ссылка на Facebook"
+              >
+                <svg class="footer-social">
+                  <use href="./images/sprite.svg#logo-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon">
+              <a
+                class="link"
+                href="http://linkedin.com"
+                aria-label="Ссылка на Linkedin"
+              >
+                <svg class="footer-social">
+                  <use href="./images/sprite.svg#logo-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-                  <!-- <img src="./images/logo-twitter.svg" alt="логотип Твиттер" /> -->
-                </a>
-              </li>
-              <li class="item">
-                <a href="" aria-label="Ссылка на Facebook" class="link">
-                  <svg class="social-icon" width="20" height="20">
-                    <use href="./images/sprite.svg#logo-facebook"></use>
-                  </svg>
-
-                  <!-- <img src="./images/logo-facebook.svg" alt="логотип Фейсбук" /> -->
-                </a>
-              </li>
-              <li class="item">
-                <a href="" aria-label="Ссылка на linkedin" class="link">
-                  <svg class="social-icon" width="20" height="20">
-                    <use href="./images/sprite.svg#logo-linkedin"></use>
-                  </svg>
-
-                  <!-- <img
-                    src="./images/logo-linkedin.svg"
-                    alt="логотип Линкедин"
-                  /> -->
-                </a>
-              </li>
-            </ul>
+        <div class="subscribe-div">
+          <div class="signin">
+            <form action="">
+              <b class="action">Подпишитесь на рассылку</b>
+              <label for="mail"></label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="  E-mail"
+              />
+            </form>
           </div>
-        </div>
-        <div class="subscribe">
-          <b class="item">Подпишитесь на рассылку</b>
-          <form class="footer-form js-speaker-form">
-            <input
-              class="input"
-              type="email"
-              name="e-mail"
-              placeholder="E-mail"
-            />
-            <button type="submit" class="button">
+          <div class="button-div">
+            <button class="button subscribe">
               Подписаться
-              <svg class="icon-send" width="24" height="24">
+              <svg class="icon-subscribe">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </footer>
+
     <!-- Модальное окно "Заказать услугу" -->
 
     <div class="backdrop is-hidden" data-modal>

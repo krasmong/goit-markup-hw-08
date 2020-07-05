@@ -1,109 +1,174 @@
-.page-footer {
-  background-color: $footer-bg-color;
+.footer-section {
+  background: #2f303a;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
 }
-
-.container.footer {
-  display: flex;
-  padding-top: 48px;
-  padding-bottom: 28px;
-
-  align-items: baseline;
-  justify-content: space-between;
+.footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
-.address-list {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  .street {
-    margin-top: 10px;
+.logo-address {
+  font-weight: 300;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 63px;
+  }
+
+  .footer-logo {
     color: $primary-bg-color;
+    font-family: $font-logo;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+  .address {
+    color: $primary-bg-color;
+    font-style: normal;
+    margin-top: 10px;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 20px;
+    }
+  }
+  .footer-link {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 9px;
+    display: block;
+    text-decoration: none;
+    @media screen and (min-width: 1200px) {
+    }
+  }
+}
+// Joinus
+
+.joinus {
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
   }
 }
 
-.address .link {
-  display: block;
-  margin-top: 9px;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.social-networks {
+.social-links {
+  padding-left: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
   display: flex;
-  justify-content: space-evenly;
-  .link {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  .item:not(:last-child) {
-    margin-right: 10px;
-  }
-  .social-icon {
-    fill: $primary-bg-color;
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+    justify-content: center;
   }
 }
-
-.social .link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer-icon {
+  background-color: #44454e;
   width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  fill: $color-social-links;
+  border-radius: 80%;
+  margin-right: 10px;
+
+  transition: background-color $transition;
+
   &:hover,
   &:focus {
     background-color: $accent-color;
-    fill: #ffffff;
-    transition: background-color $transition, fill $transition;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  .link {
+    display: flex;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-.join-in > .item {
-  display: block;
-  margin-bottom: 21px;
-
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.subscribe > .item {
-  display: block;
-  margin-bottom: 21px;
-
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.subscribe .input {
-  padding: 12px 18px;
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: $primary-bg-color;
-  background-color: $footer-bg-color;
-  outline: none;
-}
-
-.footer-form {
-  display: flex;
-}
-
-.subscribe .button {
-  display: flex;
+.footer-social {
+  fill: $primary-bg-color;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
   align-items: center;
-
-  margin-left: 12px;
 }
 
-.button .icon-send {
+//subscribe
+.signin {
+  margin-right: 12px;
+  @media screen and (min-width: 768px) {
+  }
+
+  input {
+    width: 450px;
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background: #2f303a;
+    color: $primary-bg-color;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+}
+.action {
+  color: $primary-bg-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  display: block;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+}
+
+.email {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0;
+}
+.button-div {
+  align-self: flex-end;
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+}
+.subscribe {
+  display: inline-flex;
+  text-align: center;
+  padding-left: 29px;
+  padding-right: 20px;
+}
+.icon-subscribe {
+  width: 24px;
+  height: 24px;
   margin-left: 10px;
+}
+.subscribe-div {
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    display: block;
+  }
 }
