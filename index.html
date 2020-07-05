@@ -90,7 +90,7 @@
 
           <ul class="feature list">
             <li class="item">
-              <div class="bg-icon">
+              <div class="feature-item">
                 <svg class="icon-antenna" width="70" height="70">
                   <use href="./images/sprite.svg#antenna"></use>
                 </svg>
@@ -107,7 +107,7 @@
               </p>
             </li>
             <li class="item">
-              <div class="bg-icon">
+              <div class="feature-item">
                 <svg class="icon-antenna" width="70" height="70">
                   <use href="./images/sprite.svg#clock"></use>
                 </svg>
@@ -122,7 +122,7 @@
               </p>
             </li>
             <li class="item">
-              <div class="bg-icon">
+              <div class="feature-item">
                 <svg class="icon-antenna" width="70" height="70">
                   <use href="./images/sprite.svg#diagram"></use>
                 </svg>
@@ -137,7 +137,7 @@
               </p>
             </li>
             <li class="item">
-              <div class="bg-icon">
+              <div class="feature-item">
                 <svg class="icon-antenna" width="70" height="70">
                   <use href="./images/sprite.svg#astronaut"></use>
                 </svg>
@@ -196,11 +196,19 @@
 
           <ul class="team list">
             <li class="item">
-              <img
-                src="./images/teammate-1.jpg"
-                alt="фото члена команды"
-                width="270"
-              />
+              <div class="thumb">
+                <img
+                  class="pic"
+                  srcset="
+                    ./images/john.jpg    1x,
+                    ./images/john@2x.jpg 2x,
+                    ./images/john@3x.jpg 3x
+                  "
+                  src="./images/john.jpg"
+                  alt="фото члена команды"
+                />
+              </div>
+
               <h3 class="title">John Smith</h3>
               <p class="position">Product Designer</p>
 
@@ -255,11 +263,23 @@
               </ul>
             </li>
             <li class="item">
-              <img
+              <div class="thumb">
+                <img
+                  class="pic"
+                  srcset="
+                    ./images/marta.jpg    1x,
+                    ./images/marta@2x.jpg 2x,
+                    ./images/marta@3x.jpg 3x
+                  "
+                  src="./images/marta.jpg"
+                  alt="фото члена команды"
+                />
+              </div>
+              <!-- <img
                 src="./images/teammate-2.jpg"
                 alt="фото члена команды"
                 width="270"
-              />
+              /> -->
               <h3 class="title">Marta Stewart</h3>
               <p class="position">Frontend Developer</p>
 
@@ -314,11 +334,18 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                src="./images/teammate-3.jpg"
-                alt="фото члена команды"
-                width="270"
-              />
+              <div class="thumb">
+                <img
+                  class="pic"
+                  srcset="
+                    ./images/robert.jpg    1x,
+                    ./images/robert@2x.jpg 2x,
+                    ./images/robert@3x.jpg 3x
+                  "
+                  src="./images/robert.jpg"
+                  alt="фото члена команды"
+                />
+              </div>
               <h3 class="title">Robert Jakis</h3>
               <p class="position">Marketing</p>
 
@@ -373,11 +400,18 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                src="./images/teammate-4.jpg"
-                alt="фото члена команды"
-                width="270"
-              />
+              <div class="thumb">
+                <img
+                  class="pic"
+                  srcset="
+                    ./images/martin.jpg    1x,
+                    ./images/martin@2x.jpg 2x,
+                    ./images/martin@3x.jpg 3x
+                  "
+                  src="./images/martin.jpg"
+                  alt="фото члена команды"
+                />
+              </div>
               <h3 class="title">Martin Doe</h3>
               <p class="position">UI Designer</p>
 
@@ -436,13 +470,13 @@
       </section>
 
       <!--Постоянные клиенты-->
-      <section class="section clients">
-        <div class="container">
+      <section class="section">
+        <div class="container clients">
           <h2 class="section-title">Постоянные клиенты</h2>
 
-          <ul class="clients list">
-            <li class="item">
-              <a href="" aria-label="Ссылка на 1 клиента" class="link">
+          <ul class="clients-list list">
+            <li class="clients-item">
+              <a href="" aria-label="Ссылка на 1 клиента" class="clients-link">
                 <svg class="logo-client" width="44" height="49">
                   <use href="./images/sprite.svg#logo-client-1"></use>
                 </svg>
@@ -450,8 +484,8 @@
                 <!-- <img src="./images/logo-client-1.svg" alt="логотип 1 клиента" /> -->
               </a>
             </li>
-            <li class="item">
-              <a href="" aria-label="Ссылка на 2 клиента" class="link">
+            <li class="clients-item">
+              <a href="" aria-label="Ссылка на 2 клиента" class="clients-link">
                 <svg class="logo-client" width="40" height="52">
                   <use href="./images/sprite.svg#logo-client-2"></use>
                 </svg>
@@ -459,8 +493,8 @@
                 <!-- <img src="./images/logo-client-2.svg" alt="логотип 2 клиента" /> -->
               </a>
             </li>
-            <li class="item">
-              <a href="" aria-label="Ссылка на 3 клиента" class="link">
+            <li class="clients-item">
+              <a href="" aria-label="Ссылка на 3 клиента" class="clients-link">
                 <svg class="logo-client" width="41" height="43">
                   <use href="./images/sprite.svg#logo-client-3"></use>
                 </svg>
@@ -468,8 +502,8 @@
                 <!-- <img src="./images/logo-client-3.svg" alt="логотип 3 клиента" /> -->
               </a>
             </li>
-            <li class="item">
-              <a href="" aria-label="Ссылка на 4 клиента" class="link">
+            <li class="clients-item">
+              <a href="" aria-label="Ссылка на 4 клиента" class="clients-link">
                 <svg class="logo-client" width="80" height="42">
                   <use href="./images/sprite.svg#logo-client-4"></use>
                 </svg>
@@ -477,8 +511,8 @@
                 <!-- <img src="./images/logo-client-4.svg" alt="логотип 4 клиента" /> -->
               </a>
             </li>
-            <li class="item">
-              <a href="" aria-label="Ссылка на 5 клиента" class="link">
+            <li class="clients-item">
+              <a href="" aria-label="Ссылка на 5 клиента" class="clients-link">
                 <svg class="logo-client" width="59" height="47">
                   <use href="./images/sprite.svg#logo-client-5"></use>
                 </svg>
@@ -486,8 +520,8 @@
                 <!-- <img src="./images/logo-client-5.svg" alt="логотип 5 клиента" /> -->
               </a>
             </li>
-            <li class="item">
-              <a href="" aria-label="Ссылка на 6 клиента" class="link">
+            <li class="clients-item">
+              <a href="" aria-label="Ссылка на 6 клиента" class="clients-link">
                 <svg class="logo-client" width="88" height="45">
                   <use href="./images/sprite.svg#logo-client-6"></use>
                 </svg>
@@ -590,7 +624,6 @@
           </form>
         </div>
       </div>
-      <p class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
     <!-- Модальное окно "Заказать услугу" -->
 

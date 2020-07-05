@@ -1,29 +1,66 @@
 /* Постоянные клиенты */
-.clients {
+
+// .clients {
+//   text-align: center;
+//   padding-bottom: 60px;
+//   padding-top: 60px;
+// }
+
+.clients-list {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.clients-item {
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 6 * 30px) / 6);
+    margin: 15px;
+  }
+}
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 226px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 
-  .link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  transition: border-color $transition;
+  @media screen and (max-width: 767px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 170px;
-    height: 90px;
-    color: $color-social-links;
-    border: 1px solid $color-social-links;
-    border-radius: 4px;
 
-    transition: color $transition, border $transition;
-
-    &:hover,
-    &:focus {
-      border: 1px solid $accent-color;
-      color: $accent-color;
-      transition: color $transition, border $transition;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+    color: $accent-color;
   }
 }
 
 .logo-client {
-  fill: currentColor;
+  fill: #afb1b8;
+
+  transition: fill $transition;
+
+  .clients-link:hover > &,
+  .clients-link:focus > & {
+    fill: $accent-color;
+    color: $accent-color;
+  }
 }
