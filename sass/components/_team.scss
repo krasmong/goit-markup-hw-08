@@ -95,7 +95,7 @@
   display: flex;
   padding-left: 0;
   padding-bottom: 24px;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .social-icon {
@@ -106,13 +106,17 @@
   align-items: center;
 
   transition: fill $transition;
-  .item-link:hover > &,
-  .item-link:focus > & {
+  .social .link:hover > &,
+  .social .link:focus > & {
     fill: white;
   }
 }
 
-.item-link {
+// .social:nth-child {
+//   margin-right: 30px;
+// }
+
+.social .link {
   margin-right: 10px;
   display: flex;
   width: 44px;

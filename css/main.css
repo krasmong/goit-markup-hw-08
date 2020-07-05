@@ -892,9 +892,9 @@ a {
   display: flex;
   padding-left: 0;
   padding-bottom: 24px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .social-icon {
@@ -909,12 +909,12 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-link:hover > .social-icon,
-.item-link:focus > .social-icon {
+.social .link:hover > .social-icon,
+.social .link:focus > .social-icon {
   fill: white;
 }
 
-.item-link {
+.social .link {
   margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -932,7 +932,7 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item-link:hover, .item-link:focus {
+.social .link:hover, .social .link:focus {
   background-color: #2196f3;
   border-radius: 50%;
 }
